@@ -1,0 +1,176 @@
+[
+  {
+    "model": "polls.question",
+    "pk": 1,
+    "fields": {
+      "question_text": "What's your favorite color?",
+      "pub_date": "2024-12-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 2,
+    "fields": {
+      "question_text": "Which programming language do you prefer?",
+      "pub_date": "2025-01-15T12:30:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 3,
+    "fields": {
+      "question_text": "Do you like pizza?",
+      "pub_date": "2025-04-01T09:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 4,
+    "fields": {
+      "question_text": "This is a test question from the future.",
+      "pub_date": "3000-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 5,
+    "fields": {
+      "question_text": "What do you think about AI?",
+      "pub_date": "2025-03-22T17:45:00Z"
+    }
+  },
+  {
+    "model": "polls.question",
+    "pk": 6,
+    "fields": {
+      "question_text": "Test question with no answers.",
+      "pub_date": "2025-04-10T10:00:00Z"
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "choice_text": "Red",
+      "votes": 12
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "choice_text": "Blue",
+      "votes": 8
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "choice_text": "Green",
+      "votes": 5
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 4,
+    "fields": {
+      "question": 2,
+      "choice_text": "Python",
+      "votes": 30
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 5,
+    "fields": {
+      "question": 2,
+      "choice_text": "JavaScript",
+      "votes": 18
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 6,
+    "fields": {
+      "question": 2,
+      "choice_text": "C++",
+      "votes": 7
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 7,
+    "fields": {
+      "question": 3,
+      "choice_text": "Yes, always!",
+      "votes": 22
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 8,
+    "fields": {
+      "question": 3,
+      "choice_text": "Sometimes",
+      "votes": 10
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "choice_text": "No, never",
+      "votes": 2
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 10,
+    "fields": {
+      "question": 5,
+      "choice_text": "It's amazing!",
+      "votes": 25
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 11,
+    "fields": {
+      "question": 5,
+      "choice_text": "I'm worried...",
+      "votes": 4
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 12,
+    "fields": {
+      "question": 5,
+      "choice_text": "No opinion",
+      "votes": 1
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 13,
+    "fields": {
+      "question": 4,
+      "choice_text": "First test choice",
+      "votes": 0
+    }
+  },
+  {
+    "model": "polls.choice",
+    "pk": 14,
+    "fields": {
+      "question": 4,
+      "choice_text": "Second test choice",
+      "votes": 0
+    }
+  }
+]
