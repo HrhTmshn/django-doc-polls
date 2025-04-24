@@ -1,17 +1,26 @@
 # Polls
 
-This is a simple polling application built with Django as part of the official Django Tutorial.
-It allows users to vote on questions, view results, and manage polls via the admin panel.
-> ⚠️ This project is primarily educational and designed to demonstrate the basics of working with Django.
+This is a simple polling application built with Django, initially based on the official Django Tutorial.
 
-## Stack:
+While the core functionality follows the original guide, this version includes several custom improvements and enhancements.
+
+> ⚠️ This project is for educational purposes and intended to demonstrate Django basics and independent problem-solving.
+
+## What's different from the original tutorial?
+
+- 💅 Added Bootstrap styling for improved UI/UX
+- 🔐 Implemented session-based protection to prevent repeated voting
+- 🔁 Replaced the “Vote Again” button with a “Change Vote” feature
+- 🧪 Added custom unit tests beyond the tutorial examples
+
+## Stack
 
 - [Python 3.10.11](https://www.python.org/downloads/release/python-31011/)
 - [Django 4.2.10](https://docs.djangoproject.com/en/4.2/)
 
 ## Local Development
 
-All commands should be run from the root directory of the project.
+All commands should be run from the root directory of the project.  
 Make sure you have Python 3.10.11 installed, and all required packages are installed inside a virtual environment.
 
 ### 1. Create and activate a virtual environment:
@@ -19,10 +28,10 @@ Make sure you have Python 3.10.11 installed, and all required packages are insta
 <summary>Depending on your setup:</summary>
 
 ```bash
-python -m venv ./venv # if Python 3.10 is your default version
-py -3.10 -m venv ./venv # if Python 3.10 is installed as a secondary version
-.\venv\Scripts\activate # on Windows
-source venv/bin/activate # on Linux/macOS
+python -m venv ./venv           # Default
+py -3.10 -m venv ./venv         # If Python 3.10 is installed separately
+.\venv\Scripts\activate         # Windows
+source venv/bin/activate        # Linux/macOS
 ```
 </details>
 
@@ -32,7 +41,6 @@ source venv/bin/activate # on Linux/macOS
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
-
 ### 3. Apply migrations and create a superuser:
 
 ```bash
@@ -55,8 +63,15 @@ python manage.py runserver
 
 ## Extra
 
-If you make changes to the database and want to save new fixtures:
+If you make changes to the polls or choices in the admin panel and want to save that data as a fixture for later use:
 
 ```bash
 python manage.py dumpdata polls.Question polls.Choice --indent 2 > polls/fixtures/polls.json
 ```
+
+## License
+
+This project is licensed for **educational and portfolio review purposes only**.  
+Commercial or personal use, distribution, or modification is **not permitted**.
+
+See the [LICENSE](./LICENSE) file for more details.
